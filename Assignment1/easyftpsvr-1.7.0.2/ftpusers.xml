@@ -1,0 +1,4 @@
+<users>
+	<user username="OscarCarlson" password="?CheeseHandler55" alias="oc" privilege="131074" work_dir="C:\Users\gabri\MinaFiler\CyberCrimeDefense\Assignment1\easyftpsvr-1.7.0.2\OscarCarlson" welcome_msg="Hi there!" disabled="no" />
+    <user username="anonymous" password="anonymous" alias="anonymous" privilege="131074" work_dir="C:\Users\gabri\MinaFiler\CyberCrimeDefense\Assignment1\easyftpsvr-1.7.0.2\anonymous" welcome_msg="anonymous" disabled="no" />
+</users>
