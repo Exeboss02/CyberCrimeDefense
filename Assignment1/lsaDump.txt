@@ -1,0 +1,400 @@
+FILE: ======== lsass.DMP =======
+== LogonSession ==
+authentication_id 2936248 (2ccdb8)
+session_id 0
+username monitoring
+domainname winctf
+logon_server test
+logon_time 2020-04-22T17:27:00.732383+00:00
+sid S-1-5-21-959554786-447769905-2314854109-1607
+luid 2936248
+	== MSV ==
+		Username: monitoring
+		Domain: winctf
+		LM: NA
+		NT: 2785d316dd37ca24ebb855fcf054c74a
+		SHA1: 2c34d03677b6655ec7c717af3ae12c87aff7b9ce
+		DPAPI: 0801d365140d9bf4be48ffc9b104419a00000000
+	== WDIGEST [2ccdb8]==
+		username monitoring
+		domainname winctf
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: monitoring
+		Domain: WINCTF.APPSEC.AT
+		AES128 Key: 2785d316dd37ca24ebb855fcf054c74a
+		AES256 Key: 84ddedda83ef2fec84643e992945e47ccc4099894721b1d9fe6f92923fdf0601
+	== WDIGEST [2ccdb8]==
+		username monitoring
+		domainname winctf
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 404309 (62b55)
+session_id 2
+username admin_laps
+domainname ap321
+logon_server ap321
+logon_time 2020-04-22T17:18:52.062657+00:00
+sid S-1-5-21-4191487667-2686982683-505535041-500
+luid 404309
+	== MSV ==
+		Username: admin_laps
+		Domain: ap321
+		LM: NA
+		NT: b49674ecf0ac6dcc0169c6e0e99c726d
+		SHA1: 484dbef329cae9532562d7f7c3dbc4e3c7fff042
+		DPAPI: 0000000000000000000000000000000000000000
+	== WDIGEST [62b55]==
+		username admin_laps
+		domainname ap321
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: admin_laps
+		Domain: ap321
+	== WDIGEST [62b55]==
+		username admin_laps
+		domainname ap321
+		password None
+		password (hex)
+	== DPAPI [62b55]==
+		luid 404309
+		key_guid 3e48a76e-709d-42f2-9f0f-0e36629728ca
+		masterkey f7aa285a6ea8798d802e41121a9c472c391953eeeadbf50e1a1f3fc4b1cac2c7fbb537d0a7137c81260d6580e17a4447a0e334b4ed0fd1c8eca994a7e48fd743
+		sha1_masterkey 3377400281c694408f496206e82563794341d89d
+
+== LogonSession ==
+authentication_id 378953 (5c849)
+session_id 2
+username DWM-2
+domainname Window Manager
+logon_server 
+logon_time 2020-04-22T17:18:51.265913+00:00
+sid S-1-5-90-0-2
+luid 378953
+	== WDIGEST [5c849]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== WDIGEST [5c849]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 378240 (5c580)
+session_id 2
+username DWM-2
+domainname Window Manager
+logon_server 
+logon_time 2020-04-22T17:18:51.234674+00:00
+sid S-1-5-90-0-2
+luid 378240
+	== MSV ==
+		Username: DWM-2
+		Domain: Window Manager
+		LM: NA
+		NT: e90ad219309a589cce444685cfc2165a
+		SHA1: 1ca8bc169e26e79820eeb87f42de19f44b59a099
+		DPAPI: 0000000000000000000000000000000000000000
+	== WDIGEST [5c580]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: DWM-2
+		Domain: Window Manager
+		Password: 7-:ud*Awh"(;Xz?\xin8.7&XnJ[rTv,9$< RGqsvW5a+Wma8Mv&&[>FKj)Q"@gOxod28V<jH0=QWEL?kuSnV#`:'q0KJWC)v7CBKH>YUwq60QSzEB[IXXc1)
+		password (hex)37002d003a00750064002a00410077006800220028003b0058007a003f005c00780069006e0038002e003700260058006e004a005b007200540076002c00390024003c002000520047007100730076005700350061002b0057006d00610038004d007600260026005b003e0046004b006a00290051002200400067004f0078006f0064003200380056003c006a00480030003d005100570045004c003f006b00750053006e005600230060003a002700710030004b004a0057004300290076003700430042004b0048003e00590055007700710036003000510053007a00450042005b00490058005800630031002900
+		AES128 Key: e90ad219309a589cce444685cfc2165a
+		AES256 Key: b50e11091e6d3ce8d15e2fb6d59dc72555b597b26352983ae438d677222b4b04
+	== WDIGEST [5c580]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 375581 (5bb1d)
+session_id 2
+username UMFD-2
+domainname Font Driver Host
+logon_server 
+logon_time 2020-04-22T17:18:51.078448+00:00
+sid S-1-5-96-0-2
+luid 375581
+	== MSV ==
+		Username: UMFD-2
+		Domain: Font Driver Host
+		LM: NA
+		NT: e90ad219309a589cce444685cfc2165a
+		SHA1: 1ca8bc169e26e79820eeb87f42de19f44b59a099
+		DPAPI: 0000000000000000000000000000000000000000
+	== WDIGEST [5bb1d]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: UMFD-2
+		Domain: Font Driver Host
+		Password: 7-:ud*Awh"(;Xz?\xin8.7&XnJ[rTv,9$< RGqsvW5a+Wma8Mv&&[>FKj)Q"@gOxod28V<jH0=QWEL?kuSnV#`:'q0KJWC)v7CBKH>YUwq60QSzEB[IXXc1)
+		password (hex)37002d003a00750064002a00410077006800220028003b0058007a003f005c00780069006e0038002e003700260058006e004a005b007200540076002c00390024003c002000520047007100730076005700350061002b0057006d00610038004d007600260026005b003e0046004b006a00290051002200400067004f0078006f0064003200380056003c006a00480030003d005100570045004c003f006b00750053006e005600230060003a002700710030004b004a0057004300290076003700430042004b0048003e00590055007700710036003000510053007a00450042005b00490058005800630031002900
+		AES128 Key: e90ad219309a589cce444685cfc2165a
+		AES256 Key: ed49371f95c04a32a890ff02b9036c91a0638beb92e1ed72566604884d275065
+	== WDIGEST [5bb1d]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 369717 (5a435)
+session_id 0
+username admin_laps
+domainname ap321
+logon_server ap321
+logon_time 2020-04-22T17:18:50.102448+00:00
+sid S-1-5-21-4191487667-2686982683-505535041-500
+luid 369717
+
+== LogonSession ==
+authentication_id 997 (3e5)
+session_id 0
+username LOCAL SERVICE
+domainname NT AUTHORITY
+logon_server 
+logon_time 2020-04-22T17:18:04.048708+00:00
+sid S-1-5-19
+luid 997
+	== Kerberos ==
+		Username: 
+		Domain: 
+
+== LogonSession ==
+authentication_id 47812 (bac4)
+session_id 1
+username DWM-1
+domainname Window Manager
+logon_server 
+logon_time 2020-04-22T17:18:03.892460+00:00
+sid S-1-5-90-0-1
+luid 47812
+	== WDIGEST [bac4]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== WDIGEST [bac4]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 47730 (ba72)
+session_id 1
+username DWM-1
+domainname Window Manager
+logon_server 
+logon_time 2020-04-22T17:18:03.892460+00:00
+sid S-1-5-90-0-1
+luid 47730
+	== MSV ==
+		Username: DWM-1
+		Domain: Window Manager
+		LM: NA
+		NT: e90ad219309a589cce444685cfc2165a
+		SHA1: 1ca8bc169e26e79820eeb87f42de19f44b59a099
+		DPAPI: 0000000000000000000000000000000000000000
+	== WDIGEST [ba72]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: DWM-1
+		Domain: Window Manager
+		Password: 7-:ud*Awh"(;Xz?\xin8.7&XnJ[rTv,9$< RGqsvW5a+Wma8Mv&&[>FKj)Q"@gOxod28V<jH0=QWEL?kuSnV#`:'q0KJWC)v7CBKH>YUwq60QSzEB[IXXc1)
+		password (hex)37002d003a00750064002a00410077006800220028003b0058007a003f005c00780069006e0038002e003700260058006e004a005b007200540076002c00390024003c002000520047007100730076005700350061002b0057006d00610038004d007600260026005b003e0046004b006a00290051002200400067004f0078006f0064003200380056003c006a00480030003d005100570045004c003f006b00750053006e005600230060003a002700710030004b004a0057004300290076003700430042004b0048003e00590055007700710036003000510053007a00450042005b00490058005800630031002900
+		AES128 Key: e90ad219309a589cce444685cfc2165a
+		AES256 Key: cd11753a93ff258d824378672b8847fdc231ee8f82d7f21d6e16d1df9a9ab046
+	== WDIGEST [ba72]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 996 (3e4)
+session_id 0
+username ap321$
+domainname WORKGROUP
+logon_server 
+logon_time 2020-04-22T17:18:03.626962+00:00
+sid S-1-5-20
+luid 996
+	== MSV ==
+		Username: ap321
+		Domain: winctf
+		LM: NA
+		NT: e90ad219309a589cce444685cfc2165a
+		SHA1: 1ca8bc169e26e79820eeb87f42de19f44b59a099
+		DPAPI: 0000000000000000000000000000000000000000
+	== WDIGEST [3e4]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: ap321$
+		Domain: WINCTF.APPSEC.AT
+		AES128 Key: e90ad219309a589cce444685cfc2165a
+		AES256 Key: faaa8f263865bfa27bb13f38b0b23319843d3acaf45f0f40d9f79f6114321840
+	== WDIGEST [3e4]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 26890 (690a)
+session_id 0
+username UMFD-0
+domainname Font Driver Host
+logon_server 
+logon_time 2020-04-22T17:18:03.439348+00:00
+sid S-1-5-96-0-0
+luid 26890
+	== MSV ==
+		Username: UMFD-0
+		Domain: Font Driver Host
+		LM: NA
+		NT: e90ad219309a589cce444685cfc2165a
+		SHA1: 1ca8bc169e26e79820eeb87f42de19f44b59a099
+		DPAPI: 0000000000000000000000000000000000000000
+	== WDIGEST [690a]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: UMFD-0
+		Domain: Font Driver Host
+		Password: 7-:ud*Awh"(;Xz?\xin8.7&XnJ[rTv,9$< RGqsvW5a+Wma8Mv&&[>FKj)Q"@gOxod28V<jH0=QWEL?kuSnV#`:'q0KJWC)v7CBKH>YUwq60QSzEB[IXXc1)
+		password (hex)37002d003a00750064002a00410077006800220028003b0058007a003f005c00780069006e0038002e003700260058006e004a005b007200540076002c00390024003c002000520047007100730076005700350061002b0057006d00610038004d007600260026005b003e0046004b006a00290051002200400067004f0078006f0064003200380056003c006a00480030003d005100570045004c003f006b00750053006e005600230060003a002700710030004b004a0057004300290076003700430042004b0048003e00590055007700710036003000510053007a00450042005b00490058005800630031002900
+		AES128 Key: e90ad219309a589cce444685cfc2165a
+		AES256 Key: 1b36e0f5a2d69d79a711650dd6401ac84ea14234e60efa9facd94d33adb9d331
+	== WDIGEST [690a]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 26871 (68f7)
+session_id 1
+username UMFD-1
+domainname Font Driver Host
+logon_server 
+logon_time 2020-04-22T17:18:03.439348+00:00
+sid S-1-5-96-0-1
+luid 26871
+	== MSV ==
+		Username: UMFD-1
+		Domain: Font Driver Host
+		LM: NA
+		NT: e90ad219309a589cce444685cfc2165a
+		SHA1: 1ca8bc169e26e79820eeb87f42de19f44b59a099
+		DPAPI: 0000000000000000000000000000000000000000
+	== WDIGEST [68f7]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: UMFD-1
+		Domain: Font Driver Host
+		Password: 7-:ud*Awh"(;Xz?\xin8.7&XnJ[rTv,9$< RGqsvW5a+Wma8Mv&&[>FKj)Q"@gOxod28V<jH0=QWEL?kuSnV#`:'q0KJWC)v7CBKH>YUwq60QSzEB[IXXc1)
+		password (hex)37002d003a00750064002a00410077006800220028003b0058007a003f005c00780069006e0038002e003700260058006e004a005b007200540076002c00390024003c002000520047007100730076005700350061002b0057006d00610038004d007600260026005b003e0046004b006a00290051002200400067004f0078006f0064003200380056003c006a00480030003d005100570045004c003f006b00750053006e005600230060003a002700710030004b004a0057004300290076003700430042004b0048003e00590055007700710036003000510053007a00450042005b00490058005800630031002900
+		AES128 Key: e90ad219309a589cce444685cfc2165a
+		AES256 Key: b0686cda434d86885284ea97d7d669bfb7a7ebb5fd7e6852d66ba430a6c87712
+	== WDIGEST [68f7]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 25785 (64b9)
+session_id 0
+username 
+domainname 
+logon_server 
+logon_time 2020-04-22T17:18:03.278684+00:00
+sid None
+luid 25785
+	== MSV ==
+		Username: ap321
+		Domain: winctf
+		LM: NA
+		NT: e90ad219309a589cce444685cfc2165a
+		SHA1: 1ca8bc169e26e79820eeb87f42de19f44b59a099
+		DPAPI: 0000000000000000000000000000000000000000
+
+== LogonSession ==
+authentication_id 999 (3e7)
+session_id 0
+username ap321$
+domainname WORKGROUP
+logon_server 
+logon_time 2020-04-22T17:18:03.216215+00:00
+sid S-1-5-18
+luid 999
+	== WDIGEST [3e7]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: ap321$
+		Domain: WINCTF.APPSEC.AT
+		AES128 Key: e90ad219309a589cce444685cfc2165a
+		AES256 Key: faaa8f263865bfa27bb13f38b0b23319843d3acaf45f0f40d9f79f6114321840
+	== WDIGEST [3e7]==
+		username ap321$
+		domainname WORKGROUP
+		password None
+		password (hex)
+	== DPAPI [3e7]==
+		luid 999
+		key_guid f316f841-7d57-4ab5-bc52-c3d0ade5368c
+		masterkey 5206b43cc047709f9122c63b8ffdfcb5e7a3cb3a0d9e22a2bbd34526e25075e1d061abc44226050ac14ef3862b85c23d5039d122c7bbc22478e63bc2aa2c4b83
+		sha1_masterkey c186c7d4d67b1f0a11bd85d4b659fc16a721cdc0
+	== DPAPI [3e7]==
+		luid 999
+		key_guid 93fce436-2819-4edf-972b-ad34037f6cd8
+		masterkey a398095a78250209b00b7e5044ffd5395cdfc451717c4cdeaaa37816671c19364279f7af4d6939796dbec214160fcf7a624b44759a6144a8a0576139d4586d6a
+		sha1_masterkey c4bd3fabfed2d05c96cb0b97147e278c609da94f
+	== DPAPI [3e7]==
+		luid 999
+		key_guid a3d9bfae-8573-46c0-ad38-fd385f5bcef6
+		masterkey 41272738b4aad86a4acbe61ec15727dd76c09dd63f9ad320c2ca2fd9a4490d945d5a477bb565df6b279071c2d4f821e4ff5587b411e0a1a5914682763d3b5155
+		sha1_masterkey 5f7b404a3349d1472cfc9c0f73058b8d7e6098b1
+	== DPAPI [3e7]==
+		luid 999
+		key_guid 3c754852-2062-4744-9779-671762394f90
+		masterkey d5756157e57b8ee45474070cb624fba6de8de9aeaaf1e63571718f6c30832a2d37e45a4922687d7fa394b38fbd565bba1b6aa47d114fe72cb3fa9c1938c855e3
+		sha1_masterkey b910fb2a0cdbb89ceebe434de42ea6abd6b80782
+	== DPAPI [3e7]==
+		luid 999
+		key_guid 7254a160-b8e9-49c8-86c6-68ea4cd70e04
+		masterkey c6c9cfbe0d34f0a8975555bf82193ca72aacfad25b52c3f7d852d5e97d3c59601747547b21a551b44bd574252bdcac3d25b30e43865f26ec3c70b58b2f099f46
+		sha1_masterkey 355084b77c5b261fd550b63ecc06ff785bab3b53
+

